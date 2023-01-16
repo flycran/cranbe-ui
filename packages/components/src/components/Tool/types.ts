@@ -1,0 +1,1 @@
+export type SuspensionDirection = 'top' | 'bottom' | 'left' | 'right'

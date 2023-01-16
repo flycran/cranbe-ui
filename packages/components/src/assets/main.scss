@@ -1,0 +1,119 @@
+// 全局
+body {
+  color: var(--ce-color);
+}
+
+// 淡入淡出动画
+.v-enter-active,
+.v-leave-active {
+  transition: opacity var(--ce-transition-duration);
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+// 滚动条
+.ce-scroll-main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.ce-scroll-y-bar, .ce-scroll-x-bar {
+  position: absolute;
+  z-index: 1000;
+  overflow: hidden;
+  user-select: none;
+
+  .ce-scroll-x-thumb, .ce-scroll-y-thumb {
+    transition: background-color var(--ce-transition-duration);
+    transform-origin: left top;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ce-scroll-thumb-bc);
+    border-radius: 99999px;
+
+    &:hover, &.ce-active {
+      background-color: var(--ce-scroll-thumb-bc-active)
+    }
+  }
+}
+
+.ce-gap {
+  .ce-scroll-x-bar {
+    left: var(--ce-scroll-gap);
+    width: calc(100% - calc(var(--ce-scroll-gap) * 2));
+
+    .ce-scroll-x-thumb {
+      height: calc(100% - var(--ce-scroll-gap));
+    }
+  }
+
+  .ce-scroll-y-bar {
+    top: var(--ce-scroll-gap);
+    height: calc(100% - calc(var(--ce-scroll-gap) * 2));
+
+    .ce-scroll-y-thumb {
+      width: calc(100% - var(--ce-scroll-gap));
+    }
+  }
+}
+
+// 滚动条
+
+.ce-scroll-y-bar {
+  width: var(--ce-scroll-size);
+  height: 100%;
+  right: 0;
+}
+
+.ce-scroll-x-bar {
+  height: var(--ce-scroll-size);
+  width: 100%;
+  bottom: 0;
+}
+
+// 表单
+.ce-form-element {
+  display: inline-block;
+  --ce-box-shadow-color: var(--ce-input-border-color);
+  box-shadow: 0 0 0 var(--ce-input-border-width) var(--ce-box-shadow-color) inset;
+  padding: var(--ce-input-border-width);
+  border-radius: var(--ce-border-radius);
+  box-sizing: border-box;
+  transition: box-shadow var(--ce-transition-duration);
+  color: var(--ce-input-font-size);
+  background-color: var(--ce-background);
+  vertical-align: middle;
+
+  &:hover {
+    --ce-box-shadow-color: var(--ce-input-border-color-active);
+  }
+
+  &.ce-focus {
+    --ce-box-shadow-color: var(--ce-input-border-color-focus);
+  }
+}
+
+.ce-input {
+  display: inline-block;
+  height: 100%;
+  flex: 1;
+  width: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0 var(--ce-input-padding);
+  font-size: var(--ce-input-font-size);
+}
+
+

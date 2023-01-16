@@ -1,0 +1,78 @@
+:root {
+    /*全局*/
+    --ce-color: #606266;
+    --ce-font-size: 16px;
+    --ce-border-radius: 99999px;
+    --ce-border-radius-min: 6px;
+    --ce-background: #fff;
+    --ce-background-active: #eff2f8;
+    --ce-transition-duration: 0.1s;
+    --ce-card-shadow-color: rgba(60, 60, 60, 0.2);
+    --ce-card-shadow-blur: 0.5em;
+    --ce-card-shadow-spread: 0;
+    --ce-card-shadow: 0 0 var(--ce-card-shadow-blur) var(--ce-card-shadow-spread) var(--ce-card-shadow-color);
+    --ce-padding: none;
+    --ce-max-height: none;
+    /*类型色*/
+    --ce-type-background: #dcdfe6;
+    --ce-type-background-active: #c0c4cc;
+    --ce-type-primary: #409EFF;
+    --ce-type-primary-active: #3375B9;
+    --ce-type-success: #67C23A;
+    --ce-type-success-active: #4E8E2F;
+    --ce-type-info: #909399;
+    --ce-type-info-active: #6B6D71;
+    --ce-type-warning: #E19F3B;
+    --ce-type-warning-active: #A77730;
+    --ce-type-danger: #F56C6C;
+    --ce-type-danger-active: #B25252;
+    /*按钮*/
+    /*表单*/
+    --ce-input-width: 300px;
+    --ce-input-height: 2em;
+    --ce-input-line-height: 32px;
+    --ce-input-font-size: calc(var(--ce-font-size) * 0.875);
+    --ce-input-padding: 10px;
+    --ce-input-border-color: var(--ce-type-background);
+    --ce-input-border-color-active: var(--ce-type-background-active);
+    --ce-input-border-color-focus: var(--ce-type-primary);
+    --ce-input-border-width: 1px;
+    --ce-input-border-style: solid;
+    --ce-input-border: var(--ce-input-border-color) var(--ce-input-border-width) var(--ce-input-border-style);
+
+    --ce-textarea-min-height: var(--ce-input-line-height);
+    --ce-textarea-max-height: none;
+
+    --ce-checkbox-size: 1.25em;
+
+    --ce-radio-size: 1.25em;
+
+    --ce-select-background-active: var(--ce-background-active);
+
+    --ce-slider-bar-width: 8px;
+    --ce-slider-thumb-size: 20px;
+    --ce-slider-background: var(--ce-background-active);
+    /*--ce-slider-background-active: var(--ce-type-primary);*/
+    --ce-slider-background-active: linear-gradient(90deg, rgba(169,220,232,1) 0%, rgba(64,158,255,1) 100%);
+    --ce-slider-transition-duration: var(--ce-transition-duration);
+
+    /*表格*/
+    --ce-table-border-color: var(--ce-type-background);
+    --ce-table-border-width: 1px;
+    --ce-table-border-style: solid;
+    --ce-table-border: var(--ce-table-border-color) var(--ce-table-border-width) var(--ce-table-border-style);
+    --ce-table-background-even: #f5f5f5;
+    --ce-table-background-odd: #ffffff;
+    --ce-table-background-active: var(--ce-background-active);
+    /*滚动容器*/
+    --ce-scroll-size: 8px;
+    --ce-scroll-bar-bc: #efefef;
+    --ce-scroll-gap: 2px;
+    --ce-scroll-thumb-bc: rgba(180, 180, 180, 0.8);
+    --ce-scroll-thumb-bc-active: rgba(170, 170, 170, 0.9);
+    --ce-scroll-padding: none;
+    /*辅助样式*/
+    --ce-floating-shadow-color: rgba(50, 50, 50, 0.2);
+    --ce-mask-color: rgba(50, 50, 50, 0.2);
+    --ce-mask-background: var(--ce-mask-color);
+}

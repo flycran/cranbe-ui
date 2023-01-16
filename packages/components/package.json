@@ -1,0 +1,10 @@
+{
+  "name": "@cranbe-ui/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/crane-ui.umd.js",
+  "module": "dist/crane-ui.mjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
