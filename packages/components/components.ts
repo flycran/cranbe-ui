@@ -15,7 +15,7 @@ declare module '@vue/runtime-core' {
     CeScroll: typeof Components.CeScroll
     CeScrollOver: typeof Components.CeScrollOver
     CeSelect: typeof Components.CeSelect
-    CeTable: typeof Components.CeTableBase
+    CeTable: typeof Components.CeTable
     CeText: typeof Components.CeText
     CeTextarea: typeof Components.CeTextarea
   }
